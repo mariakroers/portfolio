@@ -77,9 +77,10 @@ html {
   font-style: normal;
   padding-left: 10%;
   padding-top: 1%;
-  padding-right: 60%;
+  max-width: 600px;
 
 }
+
 
 #projekterknap {
     background-color: var(--rood);
@@ -466,3 +467,204 @@ transform: translateY(-5px);
 #kontakt {
     position: relative;
 }
+
+
+
+@media (max-width: 768px) {
+
+    /* GENERELT */
+    .overskrift {
+        font-size: 3rem;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .tekst,
+    #ommigtekst {
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 0.95rem;
+    }
+
+    .underoverskrift {
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 2rem;
+    }
+
+    /* HERO */
+    #forside {
+
+        background: linear-gradient(
+            to bottom,
+            var(--groon) 70%,
+            var(--hvid) 30%
+        );
+
+        overflow: hidden;
+    }
+
+    #billedeafmig {
+
+        position: absolute;
+
+        left: 50%;
+        top: 75%;
+
+        width: 60vw;
+
+        transform: translate(-50%, -50%);
+    }
+
+    #scroll {
+        display: none;
+    }
+
+    /* KNAPPER */
+    #projekterknap,
+    #cvknap {
+
+        margin-left: 5%;
+    }
+
+    /* ABOUT */
+    .about-section {
+
+        flex-direction: column;
+
+        padding-top: 3rem;
+    }
+
+    .polaroid-container {
+
+        width: 100%;
+
+        padding-top: 0;
+
+        margin-bottom: 3rem;
+    }
+
+    .polaroid {
+        width: 70vw;
+    }
+
+    /* IKONER */
+    .værktøjstyle {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        padding-left: 5%;
+        padding-right: 5%;
+
+        gap: 1rem;
+    }
+
+    .værktøj {
+        width: 40px;
+        margin-right: 0;
+    }
+
+    /* CITATER */
+    #citatstyle {
+
+        flex-direction: column;
+    }
+
+    .citat {
+
+        margin: 1rem 5%;
+    }
+
+    /* PROJEKTER */
+    .projekterne {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .projektbilleder {
+
+        width: 100%;
+
+        height: auto;
+
+        margin-bottom: 1rem;
+    }
+
+    .tekstprojekt {
+
+        text-wrap: wrap;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    /* KONTAKT */
+    #billedeafmigto {
+
+        float: none;
+
+        display: block;
+
+        width: 70vw;
+
+        margin: auto;
+
+        padding-right: 0;
+    }
+
+    /* STJERNER */
+    .storstjerne,
+    .lillestjerne {
+
+        display: none;
+    }
+}
+
+
+
+
+@media (min-width: 1600px) {
+
+    body {
+
+        max-width: 1700px;
+
+        margin: auto;
+    }
+
+    .overskrift {
+        font-size: 5rem;
+    }
+
+    .tekst,
+    #ommigtekst,
+    .tekstprojekt {
+
+        font-size: 1.1rem;
+    }
+
+    .projektbilleder {
+
+        height: 320px;
+    }
+
+    .polaroid {
+
+        width: 350px;
+    }
+
+    .værktøj {
+        width: 60px;
+    }
+
+    .polaroid-container {
+   
+    padding-top: 6%;
+}
+}
+
+
